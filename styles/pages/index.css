@@ -1,0 +1,169 @@
+main {
+  margin-top: 60px;
+}
+
+.products-grid {
+  display: grid;
+
+  /* repeat(8, 1fr) is a way to repeat 1fr without having
+    to type "1fr" 8 times. repeat(...) is a special
+    property that works with display: grid; */
+  grid-template-columns: repeat(8, 1fr);
+}
+
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.products-grid .empty-results-message {
+  padding-left: 10px;
+  padding-top: 10px;
+  grid-column: span 2;
+}
+
+.products-grid .product-container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  border-right: 1px solid rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(240, 240, 240);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.products-grid .product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.products-grid .product-image {
+  /* Images will overflow their container by default. To
+    prevent this, we set max-width and max-height to 100%
+    so they stay inside their container. */
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.products-grid .product-name {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.products-grid .product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.products-grid .product-rating-stars {
+  width: 100px;
+  margin-right: 6px;
+}
+
+.products-grid .product-rating-count {
+  color: rgb(25, 135, 84);
+  margin-top: 3px;
+}
+
+.products-grid .product-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.products-grid .product-quantity-container {
+  margin-bottom: 17px;
+}
+
+.products-grid .variation-name {
+  font-weight: 500;
+  margin-bottom: 1px;
+}
+
+.products-grid .variation-options-container {
+  cursor: default;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.products-grid .product-spacer {
+  flex: 1;
+}
+
+.products-grid .added-to-cart-message {
+  color: rgb(25, 135, 84);
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  /* We will use JavaScript to change this opacity. */
+  opacity: 0;
+}
+
+.products-grid .added-to-cart-message img {
+  height: 19px;
+  margin-right: 6px;
+  margin-bottom: 1px;
+}
+
+.products-grid .added-to-cart-message.is-visible {
+  opacity: 1;
+  transition: none;
+}
+
+.products-grid .add-to-cart-button {
+  width: 100%;
+  padding: 8px;
+
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

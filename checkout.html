@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+
+    <!-- This code is needed for responsive design to work properly on a phone.
+      (Responsive design = make the website look good on smaller screen sizes). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Load the font Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Our custom CSS for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css" />
+    <link rel="stylesheet" href="styles/pages/checkout/checkout-header.css" />
+    <link rel="stylesheet" href="styles/pages/checkout/checkout.css" />
+  </head>
+  <body>
+    <header class="js-checkout-header checkout-header">
+      <div class="header-content">
+        <section class="left-section">
+          <a href="." data-testid="logo">
+            <img class="logo" src="images/logo.svg" />
+            <img class="mobile-logo" src="images/mobile-logo.svg" />
+          </a>
+        </section>
+
+        <section class="middle-section">
+          Checkout (<a
+            class="js-return-to-home-link return-to-home-link"
+            href="."
+            data-testid="cart-quantity"
+            >3 items</a
+          >)
+        </section>
+
+        <section class="right-section">
+          <img src="images/icons/font-awesome-money-check.svg" />
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-title">Order Details</div>
+
+      <section class="checkout-grid">
+        <div class="js-cart-summary cart-summary">
+          <div class="js-cart-item cart-item-container">
+            <div class="delivery-date">
+              Delivery date:
+              <span class="js-delivery-date"> Wednesday, January 29 </span>
+            </div>
+
+            <div class="cart-item-details-grid">
+              <img
+                class="product-image"
+                src="images/products/althletic-cotton-socks-gray.jpg"
+              />
+
+              <div class="cart-item-details">
+                <div class="product-name">Athletic Cotton Socks - Gray</div>
+
+                <div class="product-price">$10.90</div>
+
+                <div class="js-quantity-container product-quantity">
+                  Quantity:
+                  <span class="js-quantity-label quantity-label"> 2 </span>
+
+                  <input
+                    class="js-new-quantity-input new-quantity-input"
+                    type="number"
+                    value="2"
+                  />
+
+                  <span
+                    class="js-update-quantity-link update-quantity-link link-primary"
+                  >
+                    Update
+                  </span>
+
+                  <span
+                    class="js-save-quantity-link save-quantity-link link-primary"
+                  >
+                    Save
+                  </span>
+
+                  <span
+                    class="js-delete-quantity-link delete-quantity-link link-primary"
+                  >
+                    Delete
+                  </span>
+                </div>
+              </div>
+
+              <div class="delivery-options">
+                <div class="delivery-options-title">
+                  Choose a delivery option:
+                </div>
+
+                <div class="js-delivery-option delivery-option">
+                  <input
+                    class="js-delivery-option-input delivery-option-input"
+                    checked=""
+                    name="00f62f04-efb8-498a-bda4-20c7886841b5-delivery-option"
+                    type="radio"
+                  />
+
+                  <div>
+                    <div class="delivery-option-date">
+                      Wednesday, January 29
+                    </div>
+                    <div class="delivery-option-price">FREE Shipping</div>
+                  </div>
+                </div>
+
+                <div class="js-delivery-option delivery-option">
+                  <input
+                    class="js-delivery-option-input delivery-option-input"
+                    name="00f62f04-efb8-498a-bda4-20c7886841b5-delivery-option"
+                    type="radio"
+                  />
+
+                  <div>
+                    <div class="delivery-option-date">Thursday, January 23</div>
+                    <div class="delivery-option-price">$4.99 - Shipping</div>
+                  </div>
+                </div>
+
+                <div class="js-delivery-option delivery-option">
+                  <input
+                    class="js-delivery-option-input delivery-option-input"
+                    name="00f62f04-efb8-498a-bda4-20c7886841b5-delivery-option"
+                    type="radio"
+                  />
+
+                  <div>
+                    <div class="delivery-option-date">Tuesday, January 21</div>
+                    <div class="delivery-option-price">$9.99 - Shipping</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="js-cart-item cart-item-container">
+            <div class="delivery-date">
+              Delivery date:
+              <span class="js-delivery-date"> Thursday, January 23 </span>
+            </div>
+
+            <div class="cart-item-details-grid">
+              <img
+                class="product-image"
+                src="images/products/intermediate-composite-basketball.jpg"
+              />
+
+              <div class="cart-item-details">
+                <div class="product-name">Intermediate Size Basketball</div>
+
+                <div class="product-price">$20.95</div>
+
+                <div class="js-quantity-container product-quantity">
+                  Quantity:
+                  <span class="js-quantity-label quantity-label"> 1 </span>
+
+                  <input
+                    class="js-new-quantity-input new-quantity-input"
+                    type="number"
+                    value="1"
+                  />
+
+                  <span
+                    class="js-update-quantity-link update-quantity-link link-primary"
+                  >
+                    Update
+                  </span>
+
+                  <span
+                    class="js-save-quantity-link save-quantity-link link-primary"
+                  >
+                    Save
+                  </span>
+
+                  <span
+                    class="js-delete-quantity-link delete-quantity-link link-primary"
+                  >
+                    Delete
+                  </span>
+                </div>
+              </div>
+
+              <div class="delivery-options">
+                <div class="delivery-options-title">
+                  Choose a delivery option:
+                </div>
+
+                <div class="js-delivery-option delivery-option">
+                  <input
+                    class="js-delivery-option-input delivery-option-input"
+                    name="257987ca-1005-4be7-839e-9c7658175626-delivery-option"
+                    type="radio"
+                  />
+
+                  <div>
+                    <div class="delivery-option-date">
+                      Wednesday, January 29
+                    </div>
+                    <div class="delivery-option-price">FREE Shipping</div>
+                  </div>
+                </div>
+
+                <div class="js-delivery-option delivery-option">
+                  <input
+                    class="js-delivery-option-input delivery-option-input"
+                    checked=""
+                    name="257987ca-1005-4be7-839e-9c7658175626-delivery-option"
+                    type="radio"
+                  />
+
+                  <div>
+                    <div class="delivery-option-date">Thursday, January 23</div>
+                    <div class="delivery-option-price">$4.99 - Shipping</div>
+                  </div>
+                </div>
+
+                <div class="js-delivery-option delivery-option">
+                  <input
+                    class="js-delivery-option-input delivery-option-input"
+                    name="257987ca-1005-4be7-839e-9c7658175626-delivery-option"
+                    type="radio"
+                  />
+
+                  <div>
+                    <div class="delivery-option-date">Tuesday, January 21</div>
+                    <div class="delivery-option-price">$9.99 - Shipping</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="js-payment-summary payment-summary">
+          <div class="js-payment-info">
+            <div class="payment-summary-title">Payment Details</div>
+
+            <div class="payment-summary-row">
+              <div>Items (3):</div>
+              <div class="payment-summary-money" data-testid="product-cost">
+                $42.75
+              </div>
+            </div>
+
+            <div class="payment-summary-row">
+              <div>Shipping:</div>
+              <div class="payment-summary-money" data-testid="shipping-cost">
+                $4.99
+              </div>
+            </div>
+
+            <div class="payment-summary-row subtotal-row">
+              <div>Total before tax:</div>
+              <div class="payment-summary-money" data-testid="sub-total">
+                $47.74
+              </div>
+            </div>
+
+            <div class="payment-summary-row">
+              <div>Estimated tax (10%):</div>
+              <div class="payment-summary-money" data-testid="tax-cost">
+                $4.77
+              </div>
+            </div>
+
+            <div class="payment-summary-row total-row">
+              <div>Order total:</div>
+              <div class="payment-summary-money" data-testid="total-cost">
+                $52.51
+              </div>
+            </div>
+          </div>
+
+          <div class="js-payment-buttons-container">
+            <button
+              class="js-place-order-button place-order-button button-primary"
+            >
+              Place Order
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Our custom JavaScript for this page. -->
+    <script type="module" src="scripts/pages/checkout.js"></script>
+  </body>
+</html>

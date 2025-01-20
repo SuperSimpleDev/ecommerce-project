@@ -1,0 +1,271 @@
+main {
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-top: 140px;
+  margin-bottom: 100px;
+
+  /* margin-left and margin-right auto is a trick to center
+    an element horizontally without needing a container. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  column-gap: 12px;
+
+  /* Use align-items: start; so the elements in the grid
+    won't stretch vertically. */
+  align-items: start;
+}
+
+@media (max-width: 1000px) {
+  main {
+    max-width: 500px;
+  }
+
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cart-item-container,
+.payment-summary {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+  padding: 18px;
+}
+
+.cart-item-container {
+  margin-bottom: 12px;
+}
+
+.payment-summary {
+  padding-bottom: 5px;
+}
+
+@media (max-width: 1000px) {
+  .payment-summary {
+    /* grid-row puts this element into a specific row in
+      the grid. (Normally, an element's row is determined
+      by how many elements are in the grid and the order
+      of the elements in the HTML) */
+    grid-row: 1;
+    margin-bottom: 12px;
+  }
+}
+
+.cart-item-container .delivery-date {
+  color: rgb(25, 135, 84);
+  font-weight: 700;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 22px;
+}
+
+.cart-item-container .cart-item-details-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  column-gap: 25px;
+}
+
+@media (max-width: 1000px) {
+  .cart-item-container .cart-item-details-grid {
+    grid-template-columns: 100px 1fr;
+    row-gap: 30px;
+  }
+}
+
+.cart-item-container .product-image {
+  max-width: 100%;
+  max-height: 120px;
+
+  /* margin-left and margin-right auto is a trick to center
+    an element horizontally without needing a container. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart-item-container .product-name {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cart-item-container .product-price {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.cart-item-container .variation-info {
+  margin-bottom: 3px;
+}
+
+.cart-item-container .product-quantity .link-primary {
+  margin-left: 3px;
+}
+
+.cart-item-container .new-quantity-input {
+  width: 50px;
+  font-size: 16px;
+}
+
+/* The quantity text box and save quantity link are
+  initially hidden. */
+.cart-item-container .new-quantity-input,
+.cart-item-container .save-quantity-link {
+  display: none;
+}
+
+/* When updating the quantity we want to:
+  1. Show a text box where the user can set a quantity.
+  2. Hide the "Update" quantity link and replace it with
+    a "Save" quantity link. */
+.cart-item-container .is-updating-quantity .new-quantity-input,
+.cart-item-container .is-updating-quantity .save-quantity-link {
+  display: inline-block;
+}
+
+.cart-item-container .is-updating-quantity .quantity-label,
+.cart-item-container .is-updating-quantity .update-quantity-link {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .cart-item-container .delivery-options {
+    /* This property means that this element will be
+      placed in column 1 and will take up 2 columns
+      in the grid. */
+    grid-column: 1 / span 2;
+  }
+}
+
+.cart-item-container .delivery-options-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cart-item-container .delivery-option {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.cart-item-container .delivery-option:hover {
+  opacity: 0.75;
+}
+
+.cart-item-container .delivery-option:active {
+  opacity: 0.5;
+}
+
+.cart-item-container .delivery-option-input {
+  margin-left: 0px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.cart-item-container .delivery-option-date {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.cart-item-container .delivery-option-price {
+  color: rgb(120, 120, 120);
+  font-size: 15px;
+}
+
+.cart-summary .view-products-link {
+  display: inline-block;
+  padding: 8px 15px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.payment-summary .payment-summary-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.payment-summary .payment-summary-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+.payment-summary .payment-summary-money {
+  text-align: right;
+}
+
+.payment-summary .subtotal-row .payment-summary-money {
+  border-top: 1px solid rgb(222, 222, 222);
+}
+
+.payment-summary .subtotal-row div {
+  padding-top: 9px;
+}
+
+.payment-summary .total-row {
+  color: rgb(25, 135, 84);
+  font-weight: 700;
+  font-size: 18px;
+
+  border-top: 1px solid rgb(222, 222, 222);
+  padding-top: 18px;
+}
+
+.payment-summary .payment-buttons-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.payment-summary .place-order-button {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  margin-top: 20px;
+  margin-bottom: 19px;
+}
+
+.payment-summary .paypal-button-container {
+  margin-top: 20px;
+}
+
+.payment-summary .paypal-toggle {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.payment-summary .paypal-toggle input {
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.paypal-button-container {
+  display: none;
+}
+
+.use-paypal .place-order-button {
+  display: none;
+}
+
+.use-paypal .paypal-button-container {
+  display: block;
+}

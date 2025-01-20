@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tracking</title>
+
+    <!-- This code is needed for responsive design to work properly on a phone.
+    (Responsive design = make the website look good on smaller screen sizes). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Load the font Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Our custom CSS for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css" />
+    <link rel="stylesheet" href="styles/shared/header.css" />
+    <link rel="stylesheet" href="styles/pages/tracking.css" />
+  </head>
+  <body>
+    <header class="js-header header">
+      <section class="left-section">
+        <a href="." class="header-link">
+          <img class="logo" src="images/logo-white.svg" />
+          <img class="mobile-logo" src="images/mobile-logo-white.svg" />
+        </a>
+      </section>
+
+      <section class="middle-section">
+        <input
+          class="js-search-bar search-bar"
+          type="text"
+          placeholder="Search"
+          value=""
+          data-testid="search-input"
+        />
+
+        <button
+          class="js-search-button search-button"
+          data-testid="search-button"
+        >
+          <img
+            class="search-arrow-icon"
+            src="images/icons/font-awesome-right-arrow.svg"
+          />
+        </button>
+      </section>
+
+      <section class="right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="orders-text">Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img
+            class="cart-icon"
+            src="images/icons/font-awesome-cart-white.svg"
+          />
+          <div
+            class="js-cart-quantity cart-quantity"
+            data-testid="cart-quantity"
+          >
+            3
+          </div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </section>
+
+      <section class="right-section-mobile">
+        <img
+          class="js-hamburger-menu-toggle hamburger-menu-toggle"
+          src="images/icons/font-awesome-hamburger-menu.svg"
+          data-testid="hamburger-menu-toggle"
+        />
+      </section>
+
+      <div
+        class="js-hamburger-menu-dropdown hamburger-menu-dropdown"
+        data-testid="hamburger-menu-dropdown"
+      >
+        <a class="hamburger-menu-link" href="orders.html"> Orders </a>
+        <a class="hamburger-menu-link" href="checkout.html">
+          Cart (<span
+            class="js-cart-quantity-mobile cart-quantity-mobile"
+            data-testid="cart-quantity-mobile"
+            >3</span
+          >)
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="js-order-tracking order-tracking">
+        <a class="back-to-orders-link link-primary" href="orders.html">
+          View all orders
+        </a>
+
+        <div class="delivery-date" data-testid="delivery-date-message">
+          Arriving on Thursday, January 23
+        </div>
+
+        <div class="product-info" data-testid="product-name">
+          Athletic Cotton Socks - Gray
+        </div>
+
+        <div class="product-info">Quantity: 1</div>
+
+        <img
+          class="product-image"
+          src="images/products/althletic-cotton-socks-gray.jpg"
+        />
+
+        <div class="progress-labels-container">
+          <div
+            class="progress-label current-status-label"
+            data-testid="current-status"
+          >
+            Preparing
+          </div>
+          <div class="progress-label">Shipped</div>
+          <div class="progress-label">Delivered</div>
+        </div>
+
+        <div class="progress-bar-container">
+          <div
+            class="js-progress-bar progress-bar"
+            data-testid="progress-bar"
+            style="width: 7%"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Our custom JavaScript for this page. -->
+    <script type="module" src="scripts/pages/tracking.js"></script>
+  </body>
+</html>

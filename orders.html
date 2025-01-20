@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orders</title>
+
+    <!-- This code is needed for responsive design to work properly on a phone.
+    (Responsive design = make the website look good on smaller screen sizes). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Load the font Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Our custom CSS for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css" />
+    <link rel="stylesheet" href="styles/shared/header.css" />
+    <link rel="stylesheet" href="styles/pages/orders.css" />
+  </head>
+  <body>
+    <header class="js-header header">
+      <section class="left-section">
+        <a href="." class="header-link">
+          <img class="logo" src="images/logo-white.svg" />
+          <img class="mobile-logo" src="images/mobile-logo-white.svg" />
+        </a>
+      </section>
+
+      <section class="middle-section">
+        <input
+          class="js-search-bar search-bar"
+          type="text"
+          placeholder="Search"
+          value=""
+          data-testid="search-input"
+        />
+
+        <button
+          class="js-search-button search-button"
+          data-testid="search-button"
+        >
+          <img
+            class="search-arrow-icon"
+            src="images/icons/font-awesome-right-arrow.svg"
+          />
+        </button>
+      </section>
+
+      <section class="right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="orders-text">Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img
+            class="cart-icon"
+            src="images/icons/font-awesome-cart-white.svg"
+          />
+          <div
+            class="js-cart-quantity cart-quantity"
+            data-testid="cart-quantity"
+          >
+            3
+          </div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </section>
+
+      <section class="right-section-mobile">
+        <img
+          class="js-hamburger-menu-toggle hamburger-menu-toggle"
+          src="images/icons/font-awesome-hamburger-menu.svg"
+          data-testid="hamburger-menu-toggle"
+        />
+      </section>
+
+      <div
+        class="js-hamburger-menu-dropdown hamburger-menu-dropdown"
+        data-testid="hamburger-menu-dropdown"
+      >
+        <a class="hamburger-menu-link" href="orders.html"> Orders </a>
+        <a class="hamburger-menu-link" href="checkout.html">
+          Cart (<span
+            class="js-cart-quantity-mobile cart-quantity-mobile"
+            data-testid="cart-quantity-mobile"
+            >3</span
+          >)
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-title">Orders</div>
+      <div class="js-orders-grid orders-grid">
+        <div
+          class="order-container"
+          data-testid="order-container-27cba69d-4c3d-4098-b42d-ac7fa62b7664"
+        >
+          <header class="order-header">
+            <section class="left-section">
+              <div class="order-date">
+                <div class="order-header-label">Order Date:</div>
+                <div>January 20</div>
+              </div>
+              <div class="order-total">
+                <div class="order-header-label">Total:</div>
+                <div>$35.06</div>
+              </div>
+            </section>
+
+            <section class="right-section">
+              <div class="order-header-label">Order ID:</div>
+              <div>27cba69d-4c3d-4098-b42d-ac7fa62b7664</div>
+            </section>
+          </header>
+
+          <div class="order-details-grid">
+            <div class="product-image-container">
+              <img src="images/products/althletic-cotton-socks-gray.jpg" />
+            </div>
+
+            <div class="product-details">
+              <div class="product-name">Athletic Cotton Socks - Gray</div>
+
+              <div class="product-delivery-date">Arriving on: January 23</div>
+
+              <div class="product-quantity">Quantity: 1</div>
+
+              <button
+                class="js-buy-again-button buy-again-button button-primary"
+                data-order-id="27cba69d-4c3d-4098-b42d-ac7fa62b7664"
+                data-cart-item-id="79b6831d-f135-44b4-a709-42f3305f7e68"
+                data-testid="buy-again-button-79b6831d-f135-44b4-a709-42f3305f7e68"
+              >
+                <img
+                  class="buy-again-icon"
+                  src="images/icons/font-awesome-cart-white.svg"
+                />
+                <span class="buy-again-message">Add to Cart</span>
+
+                <span class="buy-again-success">
+                  <img src="images/icons/font-awesome-checkmark-white.svg" />
+                  Added
+                </span>
+              </button>
+            </div>
+
+            <div class="product-actions">
+              <button
+                class="js-track-package-button track-package-button button-secondary"
+                data-order-id="27cba69d-4c3d-4098-b42d-ac7fa62b7664"
+                data-cart-item-id="79b6831d-f135-44b4-a709-42f3305f7e68"
+                data-testid="track-package-79b6831d-f135-44b4-a709-42f3305f7e68"
+              >
+                Track Order
+              </button>
+            </div>
+
+            <div class="product-image-container">
+              <img
+                src="images/products/adults-plain-cotton-tshirt-2-pack-white.jpg"
+              />
+            </div>
+
+            <div class="product-details">
+              <div class="product-name">
+                Adults Plain Cotton T-Shirt - 2 Pack
+              </div>
+
+              <div class="product-delivery-date">Arriving on: January 29</div>
+
+              <div class="product-quantity">Quantity: 2</div>
+
+              <button
+                class="js-buy-again-button buy-again-button button-primary"
+                data-order-id="27cba69d-4c3d-4098-b42d-ac7fa62b7664"
+                data-cart-item-id="dc804e77-cd81-4383-84e6-78f50c19d4b2"
+                data-testid="buy-again-button-dc804e77-cd81-4383-84e6-78f50c19d4b2"
+              >
+                <img
+                  class="buy-again-icon"
+                  src="images/icons/font-awesome-cart-white.svg"
+                />
+                <span class="buy-again-message">Add to Cart</span>
+
+                <span class="buy-again-success">
+                  <img src="images/icons/font-awesome-checkmark-white.svg" />
+                  Added
+                </span>
+              </button>
+            </div>
+
+            <div class="product-actions">
+              <button
+                class="js-track-package-button track-package-button button-secondary"
+                data-order-id="27cba69d-4c3d-4098-b42d-ac7fa62b7664"
+                data-cart-item-id="dc804e77-cd81-4383-84e6-78f50c19d4b2"
+                data-testid="track-package-dc804e77-cd81-4383-84e6-78f50c19d4b2"
+              >
+                Track Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Our custom JavaScript for this page. -->
+    <script type="module" src="scripts/pages/orders.js"></script>
+  </body>
+</html>
