@@ -21,27 +21,53 @@
     <link rel="stylesheet" href="styles/pages/checkout/checkout.css" />
   </head>
   <body>
-    <header class="js-checkout-header checkout-header">
-      <div class="header-content">
-        <section class="left-section">
-          <a href="." data-testid="logo">
-            <img class="logo" src="images/logo.svg" />
-            <img class="mobile-logo" src="images/mobile-logo.svg" />
-          </a>
-        </section>
+    <header class="header">
+      <section class="left-section">
+        <a href="." class="header-link">
+          <img class="logo" src="images/logo-white.svg" />
+          <img class="mobile-logo" src="images/mobile-logo-white.svg" />
+        </a>
+      </section>
 
-        <section class="middle-section">
-          Checkout (<a
-            class="js-return-to-home-link return-to-home-link"
-            href="."
-            data-testid="cart-quantity"
-            >3 items</a
-          >)
-        </section>
+      <section class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img
+            class="search-arrow-icon"
+            src="images/icons/font-awesome-right-arrow.svg"
+          />
+        </button>
+      </section>
 
-        <section class="right-section">
-          <img src="images/icons/font-awesome-money-check.svg" />
-        </section>
+      <section class="right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="orders-text">Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img
+            class="cart-icon"
+            src="images/icons/font-awesome-cart-white.svg"
+          />
+          <div class="cart-quantity">3</div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </section>
+
+      <section class="right-section-mobile">
+        <img
+          class="hamburger-menu-toggle"
+          src="images/icons/font-awesome-hamburger-menu.svg"
+        />
+      </section>
+
+      <div class="hamburger-menu-dropdown">
+        <a class="hamburger-menu-link" href="orders.html">
+          Orders
+        </a>
+        <a class="hamburger-menu-link" href="checkout.html">
+          Cart (<span class="cart-quantity-mobile">3</span>)
+        </a>
       </div>
     </header>
 

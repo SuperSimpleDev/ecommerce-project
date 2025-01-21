@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/pages/index.css" />
   </head>
   <body>
-    <header class="js-header header">
+    <header class="header">
       <section class="left-section">
         <a href="." class="header-link">
           <img class="logo" src="images/logo-white.svg" />
@@ -30,13 +30,8 @@
       </section>
 
       <section class="middle-section">
-        <input
-          class="js-search-bar search-bar"
-          type="text"
-          placeholder="Search"
-        />
-
-        <button class="js-search-button search-button">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
           <img
             class="search-arrow-icon"
             src="images/icons/font-awesome-right-arrow.svg"
@@ -54,24 +49,24 @@
             class="cart-icon"
             src="images/icons/font-awesome-cart-white.svg"
           />
-          <div class="js-cart-quantity cart-quantity">3</div>
+          <div class="cart-quantity">3</div>
           <div class="cart-text">Cart</div>
         </a>
       </section>
 
       <section class="right-section-mobile">
         <img
-          class="js-hamburger-menu-toggle hamburger-menu-toggle"
+          class="hamburger-menu-toggle"
           src="images/icons/font-awesome-hamburger-menu.svg"
         />
       </section>
 
-      <div class="js-hamburger-menu-dropdown hamburger-menu-dropdown">
-        <a class="hamburger-menu-link" href="orders.html"> Orders </a>
+      <div class="hamburger-menu-dropdown">
+        <a class="hamburger-menu-link" href="orders.html">
+          Orders
+        </a>
         <a class="hamburger-menu-link" href="checkout.html">
-          Cart (<span class="js-cart-quantity-mobile cart-quantity-mobile"
-            >3</span
-          >)
+          Cart (<span class="cart-quantity-mobile">3</span>)
         </a>
       </div>
     </header>
