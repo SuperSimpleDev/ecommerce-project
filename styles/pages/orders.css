@@ -1,12 +1,14 @@
-main {
+.main {
   max-width: 850px;
   margin-top: 90px;
   margin-bottom: 100px;
   padding-left: 20px;
   padding-right: 20px;
 
-  /* margin-left and margin-right auto is a trick to center
-    an element horizontally without needing a container. */
+  /* margin-left: auto;
+     margin-right auto;
+     Is a trick for centering an element horizontally
+     without needing a container. */
   margin-left: auto;
   margin-right: auto;
 }
@@ -23,7 +25,8 @@ main {
   row-gap: 50px;
 }
 
-.order-container .order-header {
+.order-header {
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgb(222, 222, 222);
 
   display: flex;
@@ -35,55 +38,54 @@ main {
   border-top-right-radius: 5px;
 }
 
-.order-container .order-header .left-section {
+.order-header-left-section {
   display: flex;
   flex-shrink: 0;
 }
 
-.order-container .order-header-label {
+.order-header-label {
   font-weight: 700;
 }
 
-.order-container .order-date,
-.order-container .order-total {
+.order-date,
+.order-total {
   margin-right: 45px;
 }
 
-.order-container .order-header .right-section {
+.order-header-right-section {
   flex-shrink: 1;
-  text-align: right;
 }
 
 @media (max-width: 575px) {
-  .order-container .order-header {
+  .order-header {
     flex-direction: column;
     align-items: start;
     line-height: 23px;
     padding: 15px;
   }
 
-  .order-container .order-header .left-section {
+  .order-header-left-section {
     flex-direction: column;
   }
 
-  .order-container .order-header-label {
+  .order-header-label {
     margin-right: 5px;
   }
 
-  .order-container .order-date,
-  .order-container .order-total {
+  .order-date,
+  .order-total {
     display: grid;
     grid-template-columns: auto 1fr;
     margin-right: 0;
   }
 
-  .order-container .order-header .right-section {
+  .order-header-right-section {
     display: grid;
     grid-template-columns: auto 1fr;
   }
 }
 
-.order-container .order-details-grid {
+.order-details-grid {
   padding: 40px 25px;
   border: 1px solid rgb(222, 222, 222);
   border-top: none;
@@ -98,7 +100,7 @@ main {
 }
 
 @media (max-width: 800px) {
-  .order-container .order-details-grid {
+  .order-details-grid {
     grid-template-columns: 110px 1fr;
     row-gap: 0;
     padding-bottom: 8px;
@@ -106,121 +108,104 @@ main {
 }
 
 @media (max-width: 450px) {
-  .order-container .order-details-grid {
+  .order-details-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.order-container .product-image-container {
+.product-image-container {
   text-align: center;
 }
 
-.order-container .product-image-container img {
+.product-image-container img {
   max-width: 110px;
   max-height: 110px;
 }
 
-.order-container .product-name {
+.product-name {
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.order-container .product-delivery-date,
-.order-container .variation-info {
+.product-delivery-date {
   margin-bottom: 3px;
 }
 
-.order-container .product-quantity {
+.product-quantity {
   margin-bottom: 8px;
 }
 
-.order-container .buy-again-button {
+.buy-again-button {
+  font-size: 14px;
   width: 140px;
   height: 36px;
+  border-radius: 5px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.order-container .buy-again-icon {
+.buy-again-icon {
   width: 20px;
   margin-right: 10px;
 }
 
-.order-container .added-to-cart .buy-again-icon,
-.order-container .added-to-cart .buy-again-message {
-  display: none;
-}
-
-.order-container .buy-again-success {
-  display: none;
-}
-
-.order-container .buy-again-success img {
-  width: 18px;
-  margin-right: 6px;
-  margin-bottom: 2px;
-}
-
-.order-container .added-to-cart .buy-again-success {
-  display: inline-flex;
-  align-items: center;
-}
-
-.order-container .product-actions {
+.product-actions {
   align-self: start;
 }
 
-.order-container .track-package-button {
+.track-package-button {
   width: 100%;
+  font-size: 14px;
   padding: 8px;
 }
 
 @media (max-width: 800px) {
-  .order-container .buy-again-button {
+  .buy-again-button {
     margin-bottom: 10px;
   }
 
-  .order-container .product-actions {
-    /* grid-column puts this element into a specific
-      column in the grid. (Normally, an element's column
-      is determined by how many elements are in the grid
-      and the order of the elements in the HTML) */
+  .product-actions {
+    /* grid-column: 2 means this element will be placed
+       in column 2 in the grid. (Normally, the column that
+       an element is placed in is determined by the order
+       of the elements in the HTML. grid-column overrides
+       this default ordering). */
     grid-column: 2;
     margin-bottom: 30px;
   }
 
-  .order-container .track-package-button {
+  .track-package-button {
     width: 140px;
   }
 }
 
 @media (max-width: 450px) {
-  .order-container .product-image-container {
+  .product-image-container {
     text-align: center;
     margin-bottom: 25px;
   }
 
-  .order-container .product-image-container img {
+  .product-image-container img {
     max-width: 150px;
     max-height: 150px;
   }
 
-  .order-container .product-name {
+  .product-name {
     margin-bottom: 10px;
   }
 
-  .order-container .product-quantity {
+  .product-quantity {
     margin-bottom: 15px;
   }
 
-  .order-container .buy-again-button {
+  .buy-again-button {
     width: 100%;
     margin-bottom: 15px;
   }
 
-  .order-container .product-actions {
+  .product-actions {
     /* grid-column: auto; undos grid-column: 2; from above.
       This element will now be placed in its normal column
       in the grid. */
@@ -228,7 +213,7 @@ main {
     margin-bottom: 70px;
   }
 
-  .order-container .track-package-button {
+  .track-package-button {
     width: 100%;
     padding: 12px;
   }
