@@ -1,44 +1,41 @@
-main {
+.main {
   max-width: 850px;
   margin-top: 90px;
   margin-bottom: 100px;
   padding-left: 30px;
   padding-right: 30px;
 
-  /* margin-left and margin-right auto is a trick to center
-    an element horizontally without needing a container. */
+  /* margin-left: auto;
+     margin-right auto;
+     Is a trick for centering an element horizontally
+     without needing a container. */
   margin-left: auto;
   margin-right: auto;
 }
 
-.order-tracking .back-to-orders-link {
+.back-to-orders-link {
   display: inline-block;
   margin-bottom: 30px;
-  text-decoration: none;
 }
 
-.order-tracking .delivery-date {
+.delivery-date {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.order-tracking .product-info {
+.product-info {
   margin-bottom: 3px;
 }
 
-.order-tracking .variation-info {
-  margin-bottom: 3px;
-}
-
-.order-tracking .product-image {
+.product-image {
   max-width: 150px;
   max-height: 150px;
   margin-top: 25px;
   margin-bottom: 50px;
 }
 
-.order-tracking .progress-labels-container {
+.progress-labels-container {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
@@ -46,28 +43,28 @@ main {
   margin-bottom: 15px;
 }
 
-.order-tracking .current-status-label {
+.current-status {
   color: rgb(25, 135, 84);
 }
 
 @media (max-width: 575px) {
-  .order-tracking .progress-labels-container {
+  .progress-labels-container {
     font-size: 16px;
   }
 }
 
 @media (max-width: 450px) {
-  .order-tracking .progress-labels-container {
+  .progress-labels-container {
     flex-direction: column;
     margin-bottom: 5px;
   }
 
-  .order-tracking .progress-label {
+  .progress-label {
     margin-bottom: 3px;
   }
 }
 
-.order-tracking .progress-bar-container {
+.progress-bar-container {
   height: 25px;
   width: 100%;
 
@@ -76,12 +73,9 @@ main {
   overflow: hidden;
 }
 
-.order-tracking .progress-bar {
+.progress-bar {
   height: 100%;
   background-color: rgb(25, 135, 84);
   border-radius: 50px;
-
-  /* We will use JavaScript to change this width. */
-  width: 0;
-  transition: width 1s;
+  width: 50%;
 }
