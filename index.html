@@ -3,81 +3,77 @@
   <head>
     <title>Ecommerce Project</title>
 
-    <!-- This code is needed for responsive design to work properly on a phone.
-      (Responsive design = make the website look good on smaller screen sizes). -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Load the font Roboto from Google Fonts. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
-      rel="stylesheet"
-    />
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Our custom CSS for this page. -->
-    <link rel="stylesheet" href="styles/shared/general.css" />
-    <link rel="stylesheet" href="styles/shared/header.css" />
-    <link rel="stylesheet" href="styles/pages/index.css" />
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/header.css">
+    <link rel="stylesheet" href="styles/pages/index.css">
   </head>
   <body>
-    <header class="header">
-      <section class="left-section">
-        <a href="." class="header-link">
-          <img class="logo" src="images/logo-white.svg" />
-          <img class="mobile-logo" src="images/mobile-logo-white.svg" />
+    <div class="header">
+      <div class="left-section">
+        <a href="index.html" class="header-link">
+          <img class="logo"
+            src="images/logo-white.svg">
+          <img class="mobile-logo"
+            src="images/mobile-logo-white.svg">
         </a>
-      </section>
+      </div>
 
-      <section class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search" />
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
         <button class="search-button">
-          <img
-            class="search-arrow-icon"
-            src="images/icons/font-awesome-right-arrow.svg"
-          />
+          <img class="search-arrow-icon" src="images/icons/font-awesome-right-arrow.svg">
         </button>
-      </section>
+      </div>
 
-      <section class="right-section">
+      <div class="right-section">
         <a class="orders-link header-link" href="orders.html">
+
           <span class="orders-text">Orders</span>
         </a>
 
         <a class="cart-link header-link" href="checkout.html">
-          <img
-            class="cart-icon"
-            src="images/icons/font-awesome-cart-white.svg"
-          />
+          <img class="cart-icon" src="images/icons/font-awesome-cart-white.svg">
           <div class="cart-quantity">3</div>
           <div class="cart-text">Cart</div>
         </a>
-      </section>
-    </header>
+      </div>
+    </div>
 
-    <main>
+    <div class="main">
       <div class="products-grid">
         <div class="product-container">
           <div class="product-image-container">
-            <img
-              class="product-image"
-              src="images/products/althletic-cotton-socks-gray.jpg"
-            />
+            <img class="product-image"
+              src="images/products/althletic-cotton-socks-gray.jpg">
           </div>
 
-          <div class="product-name limit-to-2-lines">
+          <div class="product-name limit-text-to-2-lines">
             Athletic Cotton Socks - Gray
           </div>
 
           <div class="product-rating-container">
-            <img
-              class="product-rating-stars"
-              src="images/ratings/rating-45.png"
-            />
-            <div class="product-rating-count">87</div>
+            <img class="product-rating-stars"
+              src="images/ratings/rating-45.png">
+            <div class="product-rating-count link-primary">
+              87
+            </div>
           </div>
 
-          <div class="product-price">$10.90</div>
+          <div class="product-price">
+            $10.90
+          </div>
 
           <div class="product-quantity-container">
             <select>
@@ -96,35 +92,37 @@
 
           <div class="product-spacer"></div>
 
-          <div class="added-to-cart-message">
+          <div class="added-to-cart">
             <img src="images/icons/font-awesome-checkmark.svg" />
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary">Add to Cart</button>
+          <button class="add-to-cart-button button-primary">
+            Add to Cart
+          </button>
         </div>
 
         <div class="product-container">
           <div class="product-image-container">
-            <img
-              class="product-image"
-              src="images/products/intermediate-composite-basketball.jpg"
-            />
+            <img class="product-image"
+              src="images/products/intermediate-composite-basketball.jpg">
           </div>
 
-          <div class="product-name limit-to-2-lines">
+          <div class="product-name limit-text-to-2-lines">
             Intermediate Size Basketball
           </div>
 
           <div class="product-rating-container">
-            <img
-              class="product-rating-stars"
-              src="images/ratings/rating-4.png"
-            />
-            <div class="product-rating-count">127</div>
+            <img class="product-rating-stars"
+              src="images/ratings/rating-4.png">
+            <div class="product-rating-count link-primary">
+              127
+            </div>
           </div>
 
-          <div class="product-price">$20.95</div>
+          <div class="product-price">
+            $20.95
+          </div>
 
           <div class="product-quantity-container">
             <select>
@@ -143,35 +141,37 @@
 
           <div class="product-spacer"></div>
 
-          <div class="added-to-cart-message">
-            <img src="images/icons/font-awesome-checkmark.svg" />
+          <div class="added-to-cart">
+            <img src="images/icons/font-awesome-checkmark.svg">
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary">Add to Cart</button>
+          <button class="add-to-cart-button button-primary">
+            Add to Cart
+          </button>
         </div>
 
         <div class="product-container">
           <div class="product-image-container">
-            <img
-              class="product-image"
-              src="images/products/adults-plain-cotton-tshirt-2-pack-white.jpg"
-            />
+            <img class="product-image"
+              src="images/products/adults-plain-cotton-tshirt-2-pack-white.jpg">
           </div>
 
-          <div class="product-name limit-to-2-lines">
+          <div class="product-name limit-text-to-2-lines">
             Adults Plain Cotton T-Shirt - 2 Pack
           </div>
 
           <div class="product-rating-container">
-            <img
-              class="product-rating-stars"
-              src="images/ratings/rating-45.png"
-            />
-            <div class="product-rating-count">56</div>
+            <img class="product-rating-stars"
+              src="images/ratings/rating-45.png">
+            <div class="product-rating-count link-primary">
+              56
+            </div>
           </div>
 
-          <div class="product-price">$7.99</div>
+          <div class="product-price">
+            $7.99
+          </div>
 
           <div class="product-quantity-container">
             <select>
@@ -190,14 +190,16 @@
 
           <div class="product-spacer"></div>
 
-          <div class="added-to-cart-message">
-            <img src="images/icons/font-awesome-checkmark.svg" />
+          <div class="added-to-cart">
+            <img src="images/icons/font-awesome-checkmark.svg">
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary">Add to Cart</button>
+          <button class="add-to-cart-button button-primary">
+            Add to Cart
+          </button>
         </div>
       </div>
-    </main>
+    </div>
   </body>
 </html>
