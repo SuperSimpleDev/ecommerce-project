@@ -129,53 +129,6 @@
   }
 }
 
-.header .hamburger-menu-toggle {
-  display: block;
-  padding: 6px;
-  cursor: pointer;
-  height: 24px;
-}
-
-.header .hamburger-menu-dropdown {
-  background-color: rgb(8, 79, 45);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60px;
-
-  z-index: 100;
-  text-align: center;
-
-  display: none;
-  overflow: hidden;
-
-  /* We will use JavaScript to change this height. */
-  height: 0px;
-  transition: height 0.25s;
-}
-
-@media (max-width: 575px) {
-  .header .hamburger-menu-dropdown {
-    display: block;
-  }
-
-  .header .hamburger-menu-opened {
-    height: 88px;
-  }
-
-  .header .hamburger-menu-link {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    font-weight: 500;
-  }
-
-  .header .hamburger-menu-link:hover {
-    background-color: rgba(25, 135, 84, 0.4);
-  }
-}
-
 .header .orders-link {
   color: white;
   display: flex;
