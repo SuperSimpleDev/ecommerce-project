@@ -83,6 +83,10 @@ input, select, button {
   opacity: 0.75;
 }
 
+.link-primary:active {
+  opacity: 0.5;
+}
+
 /* Styles for dropdown selectors. */
 select {
   color: rgb(33, 33, 33);

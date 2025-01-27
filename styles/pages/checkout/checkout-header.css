@@ -14,7 +14,7 @@
   z-index: 1000;
 }
 
-.header-content {
+.checkout-header .header-content {
   width: 100%;
   max-width: 1100px;
 
@@ -22,16 +22,16 @@
   align-items: center;
 }
 
-.checkout-header-left-section {
+.checkout-header .checkout-header-left-section {
   width: 200px;
 }
 
-.logo {
+.checkout-header .logo {
   height: 28px;
   margin-top: 0px;
 }
 
-.mobile-logo {
+.checkout-header .mobile-logo {
   display: none;
 }
 
@@ -40,22 +40,22 @@
    means when the screen width is 575px or less, different
    styles (inside the {...}) will be applied. */
 @media (max-width: 575px) {
-  .checkout-header-left-section {
+  .checkout-header .checkout-header-left-section {
     width: auto;
   }
 
-  .logo {
+  .checkout-header .logo {
     display: none;
   }
 
-  .mobile-logo {
+  .checkout-header .mobile-logo {
     display: inline-block;
     height: 35px;
     margin-top: 5px;
   }
 }
 
-.checkout-header-middle-section {
+.checkout-header .checkout-header-middle-section {
   flex: 1;
   flex-shrink: 0;
   text-align: center;
@@ -67,7 +67,7 @@
   justify-content: center;
 }
 
-.return-to-home-link {
+.checkout-header .return-to-home-link {
   color: rgb(25, 135, 84);
 
   text-decoration: none;
@@ -75,23 +75,23 @@
 }
 
 @media (max-width: 1000px) {
-  .checkout-header-middle-section {
+  .checkout-header .checkout-header-middle-section {
     font-size: 20px;
     margin-right: 60px;
   }
 
-  .return-to-home-link {
+  .checkout-header .return-to-home-link {
     font-size: 20px;
   }
 }
 
 @media (max-width: 575px) {
-  .checkout-header-middle-section {
+  .checkout-header .checkout-header-middle-section {
     margin-right: 5px;
   }
 }
 
-.checkout-header-right-section {
+.checkout-header .checkout-header-right-section {
   text-align: right;
   width: 200px;
   display: flex;
@@ -99,12 +99,12 @@
   justify-content: end;
 }
 
-.checkout-header-right-section img {
+.checkout-header .checkout-header-right-section img {
   height: 32px;
 }
 
 @media (max-width: 1000px) {
-  .checkout-header-right-section {
+  .checkout-header .checkout-header-right-section {
     width: auto;
   }
 }

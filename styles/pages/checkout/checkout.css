@@ -1,4 +1,4 @@
-.main {
+.checkout-page {
   max-width: 1100px;
   padding-left: 30px;
   padding-right: 30px;
@@ -14,13 +14,13 @@
   margin-right: auto;
 }
 
-.page-title {
+.checkout-page .page-title {
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 18px;
 }
 
-.checkout-grid {
+.checkout-page .checkout-grid {
   display: grid;
   /* Here, 1fr means the first column will take
      up the remaining space in the grid. */
@@ -33,32 +33,32 @@
 }
 
 @media (max-width: 1000px) {
-  .main {
+  .checkout-page .main {
     max-width: 500px;
   }
 
-  .checkout-grid {
+  .checkout-page .checkout-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.cart-item-container,
-.payment-summary {
+.checkout-page .cart-item-container,
+.checkout-page .payment-summary {
   border: 1px solid rgb(222, 222, 222);
   border-radius: 4px;
   padding: 18px;
 }
 
-.cart-item-container {
+.checkout-page .cart-item-container {
   margin-bottom: 12px;
 }
 
-.payment-summary {
+.checkout-page .payment-summary {
   padding-bottom: 5px;
 }
 
 @media (max-width: 1000px) {
-  .payment-summary {
+  .checkout-page .payment-summary {
     /* grid-row: 1 means this element will be placed into row
       1 in the grid. (Normally, the row that an element is
       placed in is determined by the order of the elements in
@@ -68,7 +68,7 @@
   }
 }
 
-.delivery-date {
+.checkout-page .delivery-date {
   color: rgb(25, 135, 84);
   font-weight: 700;
   font-size: 19px;
@@ -76,7 +76,7 @@
   margin-bottom: 22px;
 }
 
-.cart-item-details-grid {
+.checkout-page .cart-item-details-grid {
   display: grid;
   /* 100px 1fr 1fr; means the 2nd and 3rd column will
     take up half the remaining space in the grid
@@ -86,13 +86,13 @@
 }
 
 @media (max-width: 1000px) {
-  .cart-item-details-grid {
+  .checkout-page .cart-item-details-grid {
     grid-template-columns: 100px 1fr;
     row-gap: 30px;
   }
 }
 
-.product-image {
+.checkout-page .product-image {
   max-width: 100%;
   max-height: 120px;
 
@@ -104,23 +104,23 @@
   margin-right: auto;
 }
 
-.product-name {
+.checkout-page .product-name {
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-.product-price {
+.checkout-page .product-price {
 
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.product-quantity .link-primary {
+.checkout-page .product-quantity .link-primary {
   margin-left: 3px;
 }
 
 @media (max-width: 1000px) {
-  .delivery-options {
+  .checkout-page .delivery-options {
     /* grid-column: 1 means this element will be placed
        in column 1 in the grid. (Normally, the column that
        an element is placed in is determined by the order
@@ -134,41 +134,41 @@
   }
 }
 
-.delivery-options-title {
+.checkout-page .delivery-options-title {
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.delivery-option {
+.checkout-page .delivery-option {
   display: grid;
   grid-template-columns: 24px 1fr;
   margin-bottom: 12px;
   cursor: pointer;
 }
 
-.delivery-option-input {
+.checkout-page .delivery-option-input {
   margin: 3px 5px 0px 0px;
   cursor: pointer;
 }
 
-.delivery-option-date {
+.checkout-page .delivery-option-date {
 
   font-weight: 500;
   margin-bottom: 3px;
 }
 
-.delivery-option-price {
+.checkout-page .delivery-option-price {
   color: rgb(120, 120, 120);
   font-size: 15px;
 }
 
-.payment-summary-title {
+.checkout-page .payment-summary-title {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 12px;
 }
 
-.payment-summary-row {
+.checkout-page .payment-summary-row {
   display: grid;
   /* 1fr auto; means the width of the 2nd column will be
      determined by the elements inside the column (auto).
@@ -179,19 +179,19 @@
   margin-bottom: 9px;
 }
 
-.payment-summary-money {
+.checkout-page .payment-summary-money {
   text-align: right;
 }
 
-.subtotal-row .payment-summary-money {
+.checkout-page .subtotal-row .payment-summary-money {
   border-top: 1px solid rgb(222, 222, 222);
 }
 
-.subtotal-row div {
+.checkout-page .subtotal-row div {
   padding-top: 9px;
 }
 
-.total-row {
+.checkout-page .total-row {
   color: rgb(25, 135, 84);
   font-weight: 700;
   font-size: 18px;
@@ -200,7 +200,7 @@
   padding-top: 18px;
 }
 
-.place-order-button {
+.checkout-page .place-order-button {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;

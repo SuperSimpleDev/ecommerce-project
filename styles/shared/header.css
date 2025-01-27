@@ -25,7 +25,7 @@
   }
 }
 
-.header-link {
+.header .header-link {
   display: inline-block;
   padding: 6px 9.5px;
   border-radius: 2px;

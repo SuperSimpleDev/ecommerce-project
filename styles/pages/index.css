@@ -1,8 +1,8 @@
-.main {
+.home-page {
   margin-top: 60px;
 }
 
-.products-grid {
+.home-page .products-grid {
   display: grid;
 
   /* - In CSS Grid, 1fr means a column will take up the
@@ -22,7 +22,7 @@
    means when the screen width is 2000px or less, we
    will divide the grid into 7 columns instead of 8. */
 @media (max-width: 2000px) {
-  .products-grid {
+  .home-page .products-grid {
     grid-template-columns: repeat(7, 1fr);
   }
 }
@@ -30,42 +30,42 @@
 /* This @media means when the screen width is 1600px or
    less, we will divide the grid into 6 columns. */
 @media (max-width: 1600px) {
-  .products-grid {
+  .home-page .products-grid {
     grid-template-columns: repeat(6, 1fr);
   }
 }
 
 @media (max-width: 1300px) {
-  .products-grid {
+  .home-page .products-grid {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (max-width: 1000px) {
-  .products-grid {
+  .home-page .products-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 800px) {
-  .products-grid {
+  .home-page .products-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 575px) {
-  .products-grid {
+  .home-page .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 450px) {
-  .products-grid {
+  .home-page .products-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.product-container {
+.home-page .product-container {
   padding-top: 40px;
   padding-bottom: 25px;
   padding-left: 25px;
@@ -78,7 +78,7 @@
   flex-direction: column;
 }
 
-.product-image-container {
+.home-page .product-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@
   margin-bottom: 20px;
 }
 
-.product-image {
+.home-page .product-image {
   /* Images overflow the container by default. To prevent this, set
      max-width and max-height to 100% to stay inside container. */
   max-width: 100%;
@@ -95,42 +95,42 @@
   border-radius: 5px;
 }
 
-.product-name {
+.home-page .product-name {
   height: 40px;
   margin-bottom: 5px;
 }
 
-.product-rating-container {
+.home-page .product-rating-container {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.product-rating-stars {
+.home-page .product-rating-stars {
   width: 100px;
   margin-right: 6px;
 }
 
-.product-rating-count {
+.home-page .product-rating-count {
   color: rgb(25, 135, 84);
   cursor: auto;
   margin-top: 3px;
 }
 
-.product-price {
+.home-page .product-price {
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.product-quantity-container {
+.home-page .product-quantity-container {
   margin-bottom: 17px;
 }
 
-.product-spacer {
+.home-page .product-spacer {
   flex: 1;
 }
 
-.added-to-cart {
+.home-page .added-to-cart {
   color: rgb(25, 135, 84);
   font-size: 16px;
 
@@ -144,12 +144,12 @@
   opacity: 0;
 }
 
-.added-to-cart img {
+.home-page .added-to-cart img {
   height: 19px;
   margin-right: 6px;
 }
 
-.add-to-cart-button {
+.home-page .add-to-cart-button {
   width: 100%;
   padding: 8px;
   height: 34px;
